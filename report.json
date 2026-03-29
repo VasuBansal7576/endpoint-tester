@@ -1,0 +1,619 @@
+{
+  "timestamp": "2026-03-29T10:54:58.502Z",
+  "total_endpoints": 16,
+  "results": [
+    {
+      "tool_slug": "GMAIL_LIST_MESSAGES",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/messages",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "Returned 1 message in `messages` including 1 item ID with resultSizeEstimate 201, confirming the mailbox is readable. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "messages": [
+          {
+            "id": "19d393515096cbb0",
+            "threadId": "19d393515096cbb0"
+          }
+        ],
+        "nextPageToken": "[redacted]",
+        "resultSizeEstimate": 201
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_GET_MESSAGE",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/messages/{messageId}",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "Returned 1 labelId in `labelIds`, confirming the mailbox is readable. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "id": "19d393515096cbb0",
+        "threadId": "19d393515096cbb0",
+        "labelIds": [
+          "DRAFT"
+        ],
+        "snippet": "This is an automated validation email.",
+        "payload": {
+          "mimeType": "text/plain",
+          "headers": [
+            {
+              "name": "Received",
+              "value": "from 511566560828 named unknown by gmailapi.google.com with HTTPREST; Sun, 29 Mar 2026 06:47:53 -0400"
+            },
+            {
+              "name": "To",
+              "value": "[redacted-email]"
+            },
+            {
+              "name": "Subject",
+              "value": "Endpoint validation test"
+            },
+            {
+              "name": "Content-Type",
+              "value": "text/plain; charset=UTF-8"
+            },
+            {
+              "name": "Date",
+              "value": "Sun, 29 Mar 2026 06:47:53 -0400"
+            }
+          ]
+        },
+        "sizeEstimate": 415,
+        "historyId": "2905",
+        "internalDate": "1774781273000"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_SEND_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/send",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "Returned 1 labelId in `labelIds`, confirming the Gmail write path is live. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "id": "19d393b7d6f6c00a",
+        "threadId": "19d393b7d6f6c00a",
+        "labelIds": [
+          "SENT"
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.send"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_LABELS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/labels",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "Returned 14 labels in `labels` including 14 item IDs, confirming the mailbox is readable. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "labels": [
+          {
+            "id": "CHAT",
+            "name": "CHAT",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "SENT",
+            "name": "SENT",
+            "type": "system"
+          },
+          {
+            "id": "INBOX",
+            "name": "INBOX",
+            "type": "system"
+          },
+          {
+            "id": "IMPORTANT",
+            "name": "IMPORTANT",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          },
+          {
+            "id": "TRASH",
+            "name": "TRASH",
+            "messageListVisibility": "hide",
+            "labelListVisibility": "labelHide",
+            "type": "system"
+          }
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.labels"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_GET_PROFILE",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/profile",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "Returned 200 with response fields `emailAddress`, `messagesTotal`, `threadsTotal`, `historyId`, confirming the mailbox is readable. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "emailAddress": "[redacted-email]",
+        "messagesTotal": 21,
+        "threadsTotal": 14,
+        "historyId": "2991"
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_CREATE_DRAFT",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/drafts",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "Returned 200 with resource ID \"r-5655620072404241076\" and fields `id`, `message`, confirming the Gmail write path is live. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "id": "r-5655620072404241076",
+        "message": {
+          "id": "19d393b83f3333ee",
+          "threadId": "19d393b83f3333ee",
+          "labelIds": [
+            "DRAFT"
+          ]
+        }
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.compose"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_THREADS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/threads",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "Returned 1 thread in `threads` including 1 item ID, confirming the mailbox is readable. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "threads": [
+          {
+            "id": "19d393b83f3333ee",
+            "snippet": "This is an automated validation email.",
+            "historyId": "3004"
+          }
+        ],
+        "nextPageToken": "[redacted]",
+        "resultSizeEstimate": 16
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_TRASH_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/{messageId}/trash",
+      "status": "valid",
+      "http_status_code": 200,
+      "response_summary": "Returned 2 labelIds in `labelIds`, confirming the Gmail write path is live. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "id": "19d393515096cbb0",
+        "threadId": "19d393515096cbb0",
+        "labelIds": [
+          "DRAFT",
+          "TRASH"
+        ]
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_LIST_FOLDERS",
+      "method": "GET",
+      "path": "/gmail/v1/users/me/folders",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "The API returned a HTML 404 with \"<!DOCTYPE html> <html lang=en> <meta charset=utf-8> <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\"> <title>Error 404 (Not Found)!!1</title> <sty...\" for GET /gmail/v1/users/me/folders. Because this endpoint does not require any path parameters, that is strong evidence that the path itself is fake. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 ...",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GMAIL_ARCHIVE_MESSAGE",
+      "method": "POST",
+      "path": "/gmail/v1/users/me/messages/{messageId}/archive",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "The API returned a HTML 404 with \"<!DOCTYPE html> <html lang=en> <meta charset=utf-8> <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\"> <title>Error 404 (Not Found)!!1</title> <sty...\" for GMAIL_ARCHIVE_MESSAGE. This archive path does not exist in the real Gmail API; the real archive operation uses PATCH /messages/{id}/modify. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 ...",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/gmail.modify"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_EVENTS",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/events",
+      "status": "insufficient_scopes",
+      "http_status_code": 403,
+      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "error": {
+          "code": 403,
+          "message": "Request had insufficient authentication scopes.",
+          "errors": [
+            {
+              "message": "Insufficient Permission",
+              "domain": "global",
+              "reason": "insufficientPermissions"
+            }
+          ],
+          "status": "PERMISSION_DENIED",
+          "details": [
+            {
+              "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+              "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT",
+              "domain": "googleapis.com",
+              "metadata": {
+                "service": "[truncated]",
+                "method": "[truncated]"
+              }
+            }
+          ]
+        }
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_CREATE_EVENT",
+      "method": "POST",
+      "path": "/calendar/v3/calendars/primary/events",
+      "status": "insufficient_scopes",
+      "http_status_code": 403,
+      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.events` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "error": {
+          "code": 403,
+          "message": "Request had insufficient authentication scopes.",
+          "errors": [
+            {
+              "message": "Insufficient Permission",
+              "domain": "global",
+              "reason": "insufficientPermissions"
+            }
+          ],
+          "status": "PERMISSION_DENIED",
+          "details": [
+            {
+              "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+              "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT",
+              "domain": "googleapis.com",
+              "metadata": {
+                "service": "[truncated]",
+                "method": "[truncated]"
+              }
+            }
+          ]
+        }
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_GET_EVENT",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/events/{eventId}",
+      "status": "insufficient_scopes",
+      "http_status_code": null,
+      "response_summary": "Could not resolve required path parameter \"eventId\" for GET /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "error": "Could not resolve required path parameter \"eventId\" for GET /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT."
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_CALENDARS",
+      "method": "GET",
+      "path": "/calendar/v3/users/me/calendarList",
+      "status": "insufficient_scopes",
+      "http_status_code": 403,
+      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "error": {
+          "code": 403,
+          "message": "Request had insufficient authentication scopes.",
+          "errors": [
+            {
+              "message": "Insufficient Permission",
+              "domain": "global",
+              "reason": "insufficientPermissions"
+            }
+          ],
+          "status": "PERMISSION_DENIED",
+          "details": [
+            {
+              "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+              "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT",
+              "domain": "googleapis.com",
+              "metadata": {
+                "service": "[truncated]",
+                "method": "[truncated]"
+              }
+            }
+          ]
+        }
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_DELETE_EVENT",
+      "method": "DELETE",
+      "path": "/calendar/v3/calendars/primary/events/{eventId}",
+      "status": "insufficient_scopes",
+      "http_status_code": null,
+      "response_summary": "Could not resolve required path parameter \"eventId\" for DELETE /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": {
+        "error": "Could not resolve required path parameter \"eventId\" for DELETE /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT."
+      },
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.events"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    },
+    {
+      "tool_slug": "GOOGLECALENDAR_LIST_REMINDERS",
+      "method": "GET",
+      "path": "/calendar/v3/calendars/primary/reminders",
+      "status": "invalid_endpoint",
+      "http_status_code": 404,
+      "response_summary": "The API returned a HTML 404 with \"<!DOCTYPE html> <html lang=en> <meta charset=utf-8> <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\"> <title>Error 404 (Not Found)!!1</title> <sty...\" for GET /calendar/v3/calendars/primary/reminders. Because this endpoint does not require any path parameters, that is strong evidence that the path itself is fake. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_body": "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 ...",
+      "required_scopes": [
+        "https://www.googleapis.com/auth/calendar.readonly"
+      ],
+      "available_scopes": [
+        "https://www.googleapis.com/auth/user.addresses.read",
+        "https://www.googleapis.com/auth/userinfo.email",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "openid",
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.other.readonly",
+        "https://www.googleapis.com/auth/profile.language.read",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "https://www.googleapis.com/auth/profile.emails.read",
+        "https://www.googleapis.com/auth/user.birthday.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile"
+      ]
+    }
+  ],
+  "summary": {
+    "valid": 8,
+    "invalid_endpoint": 3,
+    "insufficient_scopes": 5,
+    "error": 0
+  }
+}
