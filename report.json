@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-29T10:54:58.502Z",
+  "timestamp": "2026-03-29T11:09:36.406Z",
   "total_endpoints": 16,
   "results": [
     {
@@ -12,8 +12,8 @@
       "response_body": {
         "messages": [
           {
-            "id": "19d393515096cbb0",
-            "threadId": "19d393515096cbb0"
+            "id": "19d393b83f3333ee",
+            "threadId": "19d393b83f3333ee"
           }
         ],
         "nextPageToken": "[redacted]",
@@ -24,17 +24,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -45,8 +45,8 @@
       "http_status_code": 200,
       "response_summary": "Returned 1 labelId in `labelIds`, confirming the mailbox is readable. Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
-        "id": "19d393515096cbb0",
-        "threadId": "19d393515096cbb0",
+        "id": "19d393b83f3333ee",
+        "threadId": "19d393b83f3333ee",
         "labelIds": [
           "DRAFT"
         ],
@@ -56,7 +56,7 @@
           "headers": [
             {
               "name": "Received",
-              "value": "from 511566560828 named unknown by gmailapi.google.com with HTTPREST; Sun, 29 Mar 2026 06:47:53 -0400"
+              "value": "from 511566560828 named unknown by gmailapi.google.com with HTTPREST; Sun, 29 Mar 2026 06:54:54 -0400"
             },
             {
               "name": "To",
@@ -72,30 +72,30 @@
             },
             {
               "name": "Date",
-              "value": "Sun, 29 Mar 2026 06:47:53 -0400"
+              "value": "Sun, 29 Mar 2026 06:54:54 -0400"
             }
           ]
         },
         "sizeEstimate": 415,
-        "historyId": "2905",
-        "internalDate": "1774781273000"
+        "historyId": "3004",
+        "internalDate": "1774781694000"
       },
       "required_scopes": [
         "https://www.googleapis.com/auth/gmail.readonly"
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -106,8 +106,8 @@
       "http_status_code": 200,
       "response_summary": "Returned 1 labelId in `labelIds`, confirming the Gmail write path is live. Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
-        "id": "19d393b7d6f6c00a",
-        "threadId": "19d393b7d6f6c00a",
+        "id": "19d3948f57b4a9f0",
+        "threadId": "19d3948f57b4a9f0",
         "labelIds": [
           "SENT"
         ]
@@ -117,17 +117,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -177,17 +177,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -199,26 +199,26 @@
       "response_summary": "Returned 200 with response fields `emailAddress`, `messagesTotal`, `threadsTotal`, `historyId`, confirming the mailbox is readable. Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
         "emailAddress": "[redacted-email]",
-        "messagesTotal": 21,
+        "messagesTotal": 22,
         "threadsTotal": 14,
-        "historyId": "2991"
+        "historyId": "3099"
       },
       "required_scopes": [
         "https://www.googleapis.com/auth/gmail.readonly"
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -227,12 +227,12 @@
       "path": "/gmail/v1/users/me/drafts",
       "status": "valid",
       "http_status_code": 200,
-      "response_summary": "Returned 200 with resource ID \"r-5655620072404241076\" and fields `id`, `message`, confirming the Gmail write path is live. Connected account used: ca_bmHO2zOYFWkT.",
+      "response_summary": "Returned 200 with resource ID \"r8891391767239233653\" and fields `id`, `message`, confirming the Gmail write path is live. Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
-        "id": "r-5655620072404241076",
+        "id": "r8891391767239233653",
         "message": {
-          "id": "19d393b83f3333ee",
-          "threadId": "19d393b83f3333ee",
+          "id": "19d3948f4841efbc",
+          "threadId": "19d3948f4841efbc",
           "labelIds": [
             "DRAFT"
           ]
@@ -243,17 +243,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -266,30 +266,30 @@
       "response_body": {
         "threads": [
           {
-            "id": "19d393b83f3333ee",
-            "snippet": "This is an automated validation email.",
-            "historyId": "3004"
+            "id": "19d393b7d6f6c00a",
+            "snippet": "Address not found Your message wasn&#39;t delivered to [redacted-email] because the domain example.com couldn&#39;t be found. Check for typos or unnecessary spaces and try again. LEARN MORE This",
+            "historyId": "3089"
           }
         ],
         "nextPageToken": "[redacted]",
-        "resultSizeEstimate": 16
+        "resultSizeEstimate": 15
       },
       "required_scopes": [
         "https://www.googleapis.com/auth/gmail.readonly"
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -300,8 +300,8 @@
       "http_status_code": 200,
       "response_summary": "Returned 2 labelIds in `labelIds`, confirming the Gmail write path is live. Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
-        "id": "19d393515096cbb0",
-        "threadId": "19d393515096cbb0",
+        "id": "19d393b83f3333ee",
+        "threadId": "19d393b83f3333ee",
         "labelIds": [
           "DRAFT",
           "TRASH"
@@ -312,17 +312,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -338,17 +338,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -364,17 +364,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -383,7 +383,7 @@
       "path": "/calendar/v3/calendars/primary/events",
       "status": "insufficient_scopes",
       "http_status_code": 403,
-      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, https://mail.google.com/, userinfo.profile (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
         "error": {
           "code": 403,
@@ -414,17 +414,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -433,7 +433,7 @@
       "path": "/calendar/v3/calendars/primary/events",
       "status": "insufficient_scopes",
       "http_status_code": 403,
-      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.events` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.events` scope, but the connected token exposes user.addresses.read, https://mail.google.com/, userinfo.profile (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
         "error": {
           "code": 403,
@@ -452,8 +452,8 @@
               "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT",
               "domain": "googleapis.com",
               "metadata": {
-                "service": "[truncated]",
-                "method": "[truncated]"
+                "method": "[truncated]",
+                "service": "[truncated]"
               }
             }
           ]
@@ -464,17 +464,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -483,26 +483,26 @@
       "path": "/calendar/v3/calendars/primary/events/{eventId}",
       "status": "insufficient_scopes",
       "http_status_code": null,
-      "response_summary": "Could not resolve required path parameter \"eventId\" for GET /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_summary": "Could not resolve required path parameter \"eventId\" for GET /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, https://mail.google.com/, userinfo.profile (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
-        "error": "Could not resolve required path parameter \"eventId\" for GET /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT."
+        "error": "Could not resolve required path parameter \"eventId\" for GET /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, https://mail.google.com/, userinfo.profile (+9 more). Connected account used: ca_bmHO2zOYFWkT."
       },
       "required_scopes": [
         "https://www.googleapis.com/auth/calendar.readonly"
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -511,7 +511,7 @@
       "path": "/calendar/v3/users/me/calendarList",
       "status": "insufficient_scopes",
       "http_status_code": 403,
-      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_summary": "403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, https://mail.google.com/, userinfo.profile (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
         "error": {
           "code": 403,
@@ -530,8 +530,8 @@
               "reason": "ACCESS_TOKEN_SCOPE_INSUFFICIENT",
               "domain": "googleapis.com",
               "metadata": {
-                "service": "[truncated]",
-                "method": "[truncated]"
+                "method": "[truncated]",
+                "service": "[truncated]"
               }
             }
           ]
@@ -542,17 +542,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -561,26 +561,26 @@
       "path": "/calendar/v3/calendars/primary/events/{eventId}",
       "status": "insufficient_scopes",
       "http_status_code": null,
-      "response_summary": "Could not resolve required path parameter \"eventId\" for DELETE /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
+      "response_summary": "Could not resolve required path parameter \"eventId\" for DELETE /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, https://mail.google.com/, userinfo.profile (+9 more). Connected account used: ca_bmHO2zOYFWkT.",
       "response_body": {
-        "error": "Could not resolve required path parameter \"eventId\" for DELETE /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, userinfo.email, contacts.readonly (+9 more). Connected account used: ca_bmHO2zOYFWkT."
+        "error": "Could not resolve required path parameter \"eventId\" for DELETE /calendar/v3/calendars/primary/events/{eventId} because dependency GOOGLECALENDAR_LIST_CALENDARS was blocked: 403 returned with \"Request had insufficient authentication scopes.\" — this endpoint requires `calendar.readonly` scope, but the connected token exposes user.addresses.read, https://mail.google.com/, userinfo.profile (+9 more). Connected account used: ca_bmHO2zOYFWkT."
       },
       "required_scopes": [
         "https://www.googleapis.com/auth/calendar.events"
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     },
     {
@@ -596,17 +596,17 @@
       ],
       "available_scopes": [
         "https://www.googleapis.com/auth/user.addresses.read",
-        "https://www.googleapis.com/auth/userinfo.email",
-        "https://www.googleapis.com/auth/contacts.readonly",
-        "openid",
-        "https://www.googleapis.com/auth/user.emails.read",
+        "https://mail.google.com/",
+        "https://www.googleapis.com/auth/userinfo.profile",
+        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/contacts.other.readonly",
         "https://www.googleapis.com/auth/profile.language.read",
-        "https://www.googleapis.com/auth/user.phonenumbers.read",
-        "https://www.googleapis.com/auth/profile.emails.read",
         "https://www.googleapis.com/auth/user.birthday.read",
-        "https://mail.google.com/",
-        "https://www.googleapis.com/auth/userinfo.profile"
+        "https://www.googleapis.com/auth/user.emails.read",
+        "https://www.googleapis.com/auth/contacts.readonly",
+        "https://www.googleapis.com/auth/user.phonenumbers.read",
+        "openid",
+        "https://www.googleapis.com/auth/userinfo.email"
       ]
     }
   ],
