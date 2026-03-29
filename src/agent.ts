@@ -725,11 +725,16 @@ export async function runAgent(params: {
     };
   }
 
-  const results: EndpointReport[] = [];
-  for (const endpoint of params.endpoints) {
+  async function runEndpointAgent(
+    endpoint: EndpointDefinition
+  ): Promise<EndpointReport> {
     const execution = await testEndpoint(endpoint);
-    results.push(execution.report);
+    return execution.report;
   }
+
+  const results = await Promise.all(
+    params.endpoints.map((endpoint) => runEndpointAgent(endpoint))
+  );
 
   const summary = {
     valid: results.filter((result) => result.status === "valid").length,

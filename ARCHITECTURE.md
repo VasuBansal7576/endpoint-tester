@@ -2,20 +2,20 @@
 
 ## 1. Design Overview
 
-I implemented the validator as a single-agent sequential executor with deterministic logic. At startup, the agent queries Composio for connected accounts, logs what it finds for debugging, selects the Gmail-connected Google account, and uses that connected account ID for all endpoint execution. This was the most reliable strategy in practice because the Gmail OAuth connection represented the real Google account, while the separate Calendar connection was returning broken 404s.
+I implemented the validator as a deterministic orchestrator that spins up one endpoint agent per endpoint. Each endpoint agent is an independent async worker, and all of them are launched concurrently with `Promise.all(...)`. At startup, the orchestrator queries Composio for connected accounts, logs what it finds for debugging, selects the Gmail-connected Google account, and uses that connected account ID for all endpoint execution. This was the most reliable strategy in practice because the Gmail OAuth connection represented the real Google account, while the separate Calendar connection was returning broken 404s.
 
 The runtime flow is:
 
 1. Read connected accounts from Composio and resolve the primary connected account ID.
 2. Fetch available scopes for that connected account once.
-3. Iterate through endpoints one by one.
+3. Launch one endpoint agent per endpoint concurrently.
 4. For each endpoint, resolve any path parameters first.
 5. Build query params and request body dynamically from the schema.
 6. Execute the endpoint through `composio.tools.proxyExecute(...)`.
 7. Classify the result and append an `EndpointReport`.
 8. Return the final `TestReport` with summary counts.
 
-Although execution is sequential, endpoint results are still cached internally. If endpoint A depends on endpoint B, and B was already executed earlier, the agent reuses the cached result instead of re-running it.
+The shared execution cache is still central to the design. If endpoint agent A depends on endpoint B while B is already running or has already completed, A reuses the cached promise/result instead of re-running it. That gives me concurrent endpoint agents without duplicate execution.
 
 ## 2. Dependency Resolution
 
@@ -81,10 +81,12 @@ This means:
 
 ## 5. Tradeoffs
 
-I chose sequential execution on purpose.
+I chose concurrent endpoint agents with a shared cache instead of a single sequential loop.
 
 Pros:
 
+- matches the assignment requirement of one agent per endpoint
+- faster wall-clock time than a fully sequential executor
 - dependency order is explicit and easy to reason about
 - logs are easy to follow
 - shared resource IDs are easier to manage
@@ -92,7 +94,8 @@ Pros:
 
 Cons:
 
-- slower than a parallel executor
+- more moving parts than a purely sequential loop
+- concurrent agents can still contend for shared IDs if heuristics are weak
 - less throughput if the endpoint set becomes very large
 
 I also chose a single connected-account strategy for execution. In theory, app-specific routing is cleaner. In practice for this assignment, using the Gmail-connected Google OAuth token for all Google endpoints was more reliable than trying to route Calendar calls through a separate broken Calendar connection.
@@ -101,12 +104,12 @@ With more time, I would improve:
 
 - smarter handling for create-then-cleanup flows when list endpoints are empty
 - richer structured reasoning for classifying ambiguous 4xx responses
-- bounded parallelism for independent endpoints
+- stronger resource-isolation for destructive endpoints
 - more explicit destructive-operation safeguards
 
 ## 6. Architecture Pattern
 
-I chose a single agent with no LLM calls and no multi-agent orchestration. The implementation is a pure deterministic executor.
+I chose a deterministic multi-worker pattern: one endpoint agent per endpoint, coordinated by a single in-process orchestrator and no LLM calls.
 
 Why this pattern:
 
@@ -121,12 +124,13 @@ Pros:
 - simple control flow
 - reproducible results
 - low latency overhead
+- aligned with the architecture requirement in the prompt
 - easy to extend with more heuristics
 
 Cons:
 
 - no natural-language reasoning for weird edge cases
 - less adaptive than a true planner/executor architecture
-- sequential execution can be slower than a coordinated parallel design
+- cache coordination is slightly more complex than a plain sequential loop
 
-For this assignment, I think this was the right tradeoff: a small, deterministic system that focuses on correctness, dependency handling, and avoiding false negatives rather than introducing LLM complexity where it was not necessary.
+For this assignment, I think this was the right tradeoff: small deterministic endpoint agents running concurrently, coordinated through a shared cache, with the complexity kept in request construction and dependency handling rather than in LLM-style planning.
